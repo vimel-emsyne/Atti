@@ -1,0 +1,180 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0.9;
+  background: transparent;
+}
+
+.logo {
+  max-height: 50px;
+  margin-left: 100px; /* Adjust based on your preference */
+}
+
+.navbar-nav {
+  margin-right: 150px; /* Adjust based on your preference */
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-left: 2px; /* Adjust to control spacing between links */
+}
+
+.nav-link:hover {
+  color: rgb(57, 181, 74);
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+  color: #28a745; /* Green color */
+}
+
+.hero {
+  position: relative;
+  height: 540px; /* Default height */
+  overflow: hidden;
+  background-image: url('../../assets/images/footerimg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  position: absolute; /* Position content over the image */
+ top: 290px;
+  left: 110px; /* Move content to the left */
+  transform: translateY(-50%); /* Adjust for exact vertical centering */
+  color: #333;
+  text-align: left; /* Align text to the left */
+  z-index: 1; /* Ensure content is above the image */
+  max-width: 50%; /* Optional: Adjust width if needed */
+}
+
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+.hero .lead {
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.btn-show {
+  margin-top: 10px;
+  border-radius: 100px;
+  background-color: rgb(57, 181, 74);
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.btn-show:hover {
+  background-color: green;
+}
+
+
+
+
+@media (max-width: 1026px) {
+  .hero {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .hero-content {
+    top: 180px; /* Adjust top position */
+    left: 130px; /* Adjust left position for smaller screens */
+    max-width: 90%; /* Increase max-width for smaller screens */
+
+  }
+
+
+  .hero h1 {
+    font-size: 32px; /* Adjust font size for smaller screens */
+  }
+
+  .hero .lead {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    margin-bottom: 20px; /* Reduce margin bottom */
+  }
+
+  .btn-show {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+
+@media (max-width: 769px) {
+  .hero {
+    height: 350px; 
+    /* Adjust height for smaller screens */
+  }
+
+  .hero-content {
+    top: 180px; /* Adjust top position */
+    left: 0px; /* Adjust left position for smaller screens */
+    max-width: 90%; /* Increase max-width for smaller screens */
+
+  }
+
+
+  .hero h1 {
+    font-size: 32px; /* Adjust font size for smaller screens */
+  }
+
+  .hero .lead {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    margin-bottom: 20px; /* Reduce margin bottom */
+  }
+
+  .btn-show {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+@media (max-width: 454px) {
+  .hero {
+    height: 300px;
+    width: auto; /* Adjust height for smaller screens */
+  }
+
+  .hero-content {
+    top: 180px; /* Adjust top position */
+    left: 0px; /* Adjust left position for smaller screens */
+    max-width: 90%; /* Increase max-width for smaller screens */
+
+  }
+
+
+  .hero h1 {
+    font-size: 32px; /* Adjust font size for smaller screens */
+  }
+
+  .hero .lead {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    margin-bottom: 20px; /* Reduce margin bottom */
+  }
+
+  .btn-show {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
